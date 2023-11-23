@@ -75,5 +75,4 @@ def trigger_logic_app(fence, logic_app_url: str) -> None:
 
         response = requests.post(logic_app_url, json=content, headers=params)
         response.raise_for_status()
-        return response
-        
+        return response        
